@@ -1,0 +1,80 @@
+<!Doctype html>
+   
+<html>
+                
+    <head>
+                <meta charset="utf-8">
+                <meta name="description" content="Treino">
+    </head>
+    
+    
+    
+    <body> 
+            <h1>Logica de programação e javascript</h1>
+        <h2>Test</h2>
+        <h2>I reapeat, this is only a test</h2>
+        <h2>Resumo rapido sobre GIT e comando mais utilizados</h2>
+        <h2>Branching</h2>
+            <p>When working on a fork, you could be switching between different branches quite commonly. As such, you generally want to stay off the master branch and work on your own feature branches so that master is always clean and you can base new branches off of it. <strong> $ git switch -c [new-branch-name] </strong></p>
+        <p>If upstream has a special develop branch or something, you can checkout that branch separately, but setup tracking so you can sync it up from time to time. Like the master branch, don't work directly on this one. Try to keep it clean.<strong> $ git switch -c <new-branch-name> --track upstream/[remote-branch-to-track]</strong>. if youre using the same name as the remote branch name, this can be simplified <strong> git switch -c[branch name]</strong></p>
+        
+        
+        
+        
+        
+        <h3>Getting and creating projetcs</h3>
+        <ul>
+            <li>git init ==> start a local repository</li>
+            <li>git clone ssh://git@github.com/[username]/[repository-name].git ===> create a local copy of a remote repo</li>
+        </ul>
+        <h3>Basic Snapshotting</h3>
+            <ul>
+                <li> git status ==> Check Status</li>
+                <li>git add [file-name.txt] ==> Add a file to the staging area</li>
+                <li>git add -A ===> Add all new changed files to the staging area</li>
+                </ul>
+        <h3>Branching Marging</h3>
+        
+        <ul>
+            <li>Git branch ===> List branches (the * denotes the current benchs</li>
+            <li>git branch -a ==> List all branches, local and remote</li>
+            <li>git branch [branch name] ==> Create a new branch</li>
+            <li>git branch -d [branc name] ==> Delete a branc</li>
+            <li>git push origin --delete[branch name] ==> Delete a remote branch</li>
+            <li>git checkout -b [branch name] ===> Create a new branch and switch to it</li>
+            <li>git checkout -b [branch name] origin/[branch name] ==> Clone a remote branch and switch to it </li>
+            <li>git branch -m[old branch name ] [new branch name] ==> rename a local branch and switch to it</li>
+            <li>git checkout [branch name] ==> Switch to a branch</li>
+            <li>git checkout - ===> Switch to the branch last checked out </li>
+            <li>git checkout --[file-name.txt] ==> Discard changes to file</li>
+            <li>git merge [branch name] ==> merge a branch into an active branch</li>
+            <li>git merge [sourge branch] [target branch] ==> Merge a branch into a target branch</li>
+            <li>git stash ==> stash changes  in a dirty working directory</li>
+            <li>git stash clear ==> remove all stashed entries</li>
+        </ul>
+        <h3>Sharing and updating projects</h3>
+            <ul>
+                <li>git push origin [branch name] ==> push a branch to your remote repository</li>
+                <li>git push -u origin [branch name ] ==> push changes to remote repository ( and remember  the branch) </li>
+                <li>git push ==> push changes  to repository ( remembered one)</li>
+                <li>git push origin --delete [branch name] ==> Delete a remote branch</li>
+                <li>git pull ==> update local repository to the newest commit </li>
+                <li>git pull origin [branch name] ==> Pull changes from remote repository</li>
+                <li>git remote add origin ssh://git@github.com/[username]/[repository-name].git ==> Add a remote repository</li>
+                <li>git set-url origin ssh://git@github.com/[username]/[repository-name].git ==> set a repository's origin branch to ssh</li>
+        </ul>
+        <h3>Inspect e comparasion</h3>
+            <ul>
+                <li>git log ==>view changes</li>
+                <li>git log --summary ==> view changes (detailed)</li>
+                <li>git diff [source branch] [target branch]</li>
+        </ul>
+        
+ 
+    
+    
+            </body>
+            <footer></footer>
+    
+    
+</html>
