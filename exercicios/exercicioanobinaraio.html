@@ -11,22 +11,29 @@
     <script>
         var ano = 1004;
         
-        /*
         while(ano <= 2017){
-            document.write(ano + "<br>");
-            ano = ano + 4;
-            }
-            */
             
+            if( !(ano % 100 === 0) || (ano % 400 === 0)){
+                document.write(ano + "<br>");
+            } else {
+            document.write(ano + " Não é bisexto<br>")
+            }
+            
+            ano = ano + 4;
+        }
+            
+        
+        
+           
             
           
         
         
         
         
-        for(var ano = 1004; ano <= 2016 && ano != (ano + 4)*100 && ano != (ano + 4)*400; ano = ano + 4 ){
+       /* for(var ano = 1004; ano <= 2016 && ano != (ano + 4)*100 && ano != (ano + 4)*400; ano = ano + 4 ){
             document.write(ano + "<br>");
-        }
+        } */
         
             
         

@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+        
+        
+        <button onclick="calcular('+')">+</button>
+        <button onclick="calcular('-')">-</button>
+        <button onclick="calcular('*')">X</button>
+        <button onclick="calcular('/')">/</button>
+        
+        
+        <div id="output"></div>
+        
+        <script>
+            var n1 = parseInt(prompt("Digite um numero: "));
+            escreve();
+            
+             function escreve(){
+              var output = document.querySelector('#output');
+            output.innerHTML = n1;
+            }
+            
+            function calcular(simbolo){
+                var n2 = parseInt(prompt("Digite outro numero: "));
+               
+                switch(simbolo){
+                    case '+':
+                        n1 += n2;
+                        break;
+                    case '-':
+                        n1 -= n2;
+                        break;
+                    case '*':
+                        n1 *= n2;
+                        break;
+                    case '/':
+                        n1 /= n2;
+                        break;
+                }
+                escreve();
+                
+            
+                
+            }
+            
+            
+            
+        </script>
+        
+        
+        <div>
+            
+           <!-- function mt(){
+                var n1 = parseInt(prompt('Digite um numero: '));
+                lt();
+                
+                var i = 1;
+                while(i <=1000){
+                    mensagem = mensagem + n1+ ' X ' + i + " = " + (n1*i) + '<br>';
+                    i = i + 1;
+                    
+                }
+                output.innerHTML = mensagem;
+                
+                
+                
+                }
+            function lt(){
+                mensagem = '';
+                output.innerHTML = mensagem;
+            }
+                
+        
+            
+            
+            
+            var output = document.querySelector("#output");
+            
+            var mensagem = ' ';
+            -->
+
+        
+        
+        </div>
+        
+
+        
+        
+        
+        
+        
+    </body>
+    
+    
+        
+        
+           
+            
+          
+        
+    
+            
+        
+        
+                 
+                
+             
+            
+
+            
+        
+        
+        
+</html>
